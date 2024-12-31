@@ -1,5 +1,5 @@
 body {
-    background: #0e0b16 url(/noise.svg);
+    background: #0e0b16 url("noise.svg");
 }
 
 #snow {
@@ -7,7 +7,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url(/snow.svg) no-repeat center center;
+    background: url("snow.svg") no-repeat center center;
     width: 100%;
     height: 20vw;
     background-size: cover;
@@ -19,7 +19,7 @@ body {
     bottom: 4vw;
     height: 50vh;
     width: 50vh;
-    background: url(/tree.svg);
+    background: url("tree.svg");
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -46,7 +46,7 @@ body {
     right: 0;
     width: 100%;
     height: 100%;
-    background-image: url(/pixels.png);
+    background-image: url("pixels.png");
     mask-image: linear-gradient(to left, white, transparent);
     opacity: 0.2;
 }
