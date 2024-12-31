@@ -24,6 +24,13 @@ body {
     background-repeat: no-repeat;
 }
 
+#hat {
+    position: absolute;
+    right: calc(20% + 12vh);
+    bottom: calc(6.5vw - 1.8rem);
+    height: 4em;
+}
+
 .content {
     font-family: "Martian Mono";
     position: absolute;
@@ -106,8 +113,8 @@ body {
     font-family: "Martian Mono";
     font-size: 0.8rem;
     position: absolute;
-    bottom: 0;
-    left: 1rem;
+    bottom: 1rem;
+    left: 2rem;
     color: #6a6c72;
 }
 #credits a {
