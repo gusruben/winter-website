@@ -100,3 +100,38 @@ body {
         transform: rotateZ(var(--angle)) translateY(1000px);
     }
 }
+
+
+#credits {
+    font-family: "Martian Mono";
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    color: #6a6c72;
+}
+#credits a {
+    color: #6242b7;
+}
+
+#present {
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    transform: translateX(-100%);
+    transition: all 0.1s;
+}
+#present.open {
+    transform: translateX(-100%) translateY(-10%);
+}
+
+#confetti {
+    position: absolute;
+    transform: translate(-100%, -130%);
+    stroke-dasharray: 15;
+    stroke-dashoffset: 15;
+}
+#confetti.open {
+    stroke-dashoffset: -14;
+    transition: stroke-dashoffset 1s;
+}
