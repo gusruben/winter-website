@@ -1,5 +1,5 @@
 body {
-    background: #0e0b16 url("noise.svg");
+    background: #0e0b16 url("assets/noise.svg");
 }
 
 #snow {
@@ -7,7 +7,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url("snow.svg") no-repeat center center;
+    background: url("assets/snow.svg") no-repeat center center;
     width: 100%;
     height: 20vw;
     background-size: cover;
@@ -19,26 +19,32 @@ body {
     bottom: 4vw;
     height: 50vh;
     width: 50vh;
-    background: url("tree.svg");
+    background: url("assets/tree.svg");
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .content {
-    font-family: "Anek Kannada";
-    color: white;
+    font-family: "Martian Mono";
     position: absolute;
     left: 10vw;
     top: 10vw;
 }
 
-.content h1 {
-    font-size: 4rem;
+.title {
+    font-weight: bold;
     margin: 0;
+    font-size: 0; /* to hide whitespace */
+
+    --bracket: #7c7888;
+    --tag: #d95f77;
 }
-.content p {
+.title span {
+    font-size: 4rem;
+}
+.subtitle {
     font-size: 1.5rem;
-    margin: 0;
+    color: #4a4752
 }
 
 #sky {
@@ -47,10 +53,10 @@ body {
     right: 0;
     width: 100%;
     height: 100%;
-    background-image: url("pixels.png");
+    background-image: url("assets/pixels.png");
     mask-image: linear-gradient(to left, white, transparent);
     opacity: 0.2;
-    pointer-events: none;
+    z-index: -1;
 }
 
 #logo {
@@ -58,4 +64,39 @@ body {
     position: absolute;
     right: 20%;
     transform: translate(18px, 20px)
+}
+
+.snowflake {
+    --size: 7px;
+    --blur: 10px;
+    --angle: 25deg;
+
+    position: fixed;
+    left: var(--x);
+    top: var(--y);
+    width: var(--size);
+    height: var(--size);
+    background-color: white;
+    border-radius: 1000px;
+    filter: blur(var(--blur));
+
+    transform: rotateZ(var(--angle));
+    animation: 10s linear infinite fall;
+}
+
+@keyframes fall {
+    0% {
+        opacity: 0;
+        transform: rotateZ(var(--angle)) translateY(0px);
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotateZ(var(--angle)) translateY(1000px);
+    }
 }

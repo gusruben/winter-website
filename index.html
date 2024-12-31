@@ -2,27 +2,34 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>A Simple Christmas</title>
+        <title>A Hacky New Year</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@100..800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@100..800&family=Martian+Mono:wght@100..800&display=swap" rel="stylesheet">
     </head>
     <body>
 
         <div class="content">
-            <h1 class="title">Happy New Year!</h1>
-            <p>And good luck with the next one ;)</p>
-            <!-- <img src="hackclub.svg" alt="" class="logo"> -->
+            <p class="subtitle">// Happy New Year!</p>
+            <p class="title">
+                <span style="color: var(--bracket)">&lt;/</span>
+                <span style="color: var(--tag)">2024</span>
+                <span style="color: var(--bracket)">&gt;</span>
+                <br>
+                <span style="color: var(--bracket)">&lt;</span>
+                <span style="color: var(--tag)">2025</span>
+                <span style="color: var(--bracket)">&gt;</span>
+            </p>
         </div>
         
         <div id="snow"></div>
         <div id="tree">
-            <img src="hackclub.svg" alt="" id="logo">
+            <img src="assets/hackclub.svg" alt="" id="logo">
         </div>
         
         <div id="sky"></div>
         
-        <script src="" async defer></script>
+        <script src="snow.js" async defer></script>
     </body>
 </html>
