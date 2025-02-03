@@ -109,17 +109,26 @@ body {
 }
 
 
-#credits {
+#credits, #source {
     font-family: "Martian Mono";
     font-size: 0.8rem;
     position: absolute;
     bottom: 1rem;
-    left: 2rem;
+}
+#credits {
     color: #6a6c72;
+    left: 2rem;
 }
 #credits a {
     color: #6242b7;
 }
+
+#source {
+    color: #6242b7;
+    right: 2rem;
+    margin-bottom: 1em;
+}
+
 
 #present {
     cursor: pointer;
