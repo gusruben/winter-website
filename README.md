@@ -4,6 +4,8 @@ This is a small website I made for fun & for the [2024 Winter Boba Challenge](ht
 
 The website is running at [winter.gus.ink](https://winter.gus.ink). See if you can find the easter egg!
 
+It's also fully mobile responsive, because why not.
+
 ## Screenshots ❄️
 
 ![image](https://github.com/user-attachments/assets/541f3777-98fa-427c-a83a-40bb7a2f7cba)
